@@ -1,0 +1,18 @@
+CACHE MANIFEST
+
+
+
+CACHE:
+/style.css
+/calendar.html
+/contacts.html
+/fans.html
+/jumbotron.css
+/news.html
+/index.html
+
+NETWORK:
+*
+
+FALLBACK:
+admin.html /error.html

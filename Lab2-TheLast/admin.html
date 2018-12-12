@@ -1,30 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" manifest="manifest.cache">
 <link rel="stylesheet" href="style.css">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-            crossorigin="anonymous"></script>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-
-
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
     <title>Roller+ Official Website -international</title>
 </head>
 <body class="body">
@@ -33,7 +18,8 @@
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div>
                 <a class="navbar-brand" href="#" style="color: whitesmoke">
-                    <img src="images/photoeditorsdk-export.png" width="30" height="25" alt="logo" style="float: left; margin-right: 3px">
+                    <img src="images/photoeditorsdk-export.png" width="30" height="25" alt="logo"
+                         style="float: left; margin-right: 3px">
                     Roller+
                 </a>
             </div>
@@ -53,7 +39,8 @@
                         <li><a href="news.html">News</a></li>
                         <li><a href="fans.html">Fans</a></li>
                         <li class="dropdown">
-                            <a href="calendar.html" class="dropdown-toggle" data-toggle="dropdown">Matches <b class="caret"></b></a>
+                            <a href="calendar.html" class="dropdown-toggle" data-toggle="dropdown">Matches <b
+                                    class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li><a href="calendar.html">Calendar</a></li>
                                 <li><a href=#>Sudmenu 4</a></li>
@@ -70,44 +57,45 @@
         </div>
     </div>
 </div>
-
-<h1 class="center after_navbar">Add news</h1>
-
-<div class="row">
-    <div class="col-sm-8">
-        <img class="admin_img" id="admin_image" src="images/roller-skates-56af69995f9b58b7d0188183.jpg">
-
-    </div>
-    <div class="col-sm-4">
-        <button type="button" id="add_image" class="btn btn-primary btn-lg btn-block">Add image</button>
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron" id="jumbotron_admin">
+    <div class="container">
+        <h1 class="display-3">Dont forget about using additional information</h1>
+        <p>There should be parametres for adding news</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
     </div>
 </div>
 
-<div class="row">
-    <div class="col-sm-8">
-        <form>
-            <div class="form-group">
-                <label for="formInput"></label>
-                <input type="text" class="form-control" id="formInput" placeholder="News title">
-            </div>
+
+</div> <!-- /container -->
+<h1 class="h1 center">Add news</h1>
+
+
+
+<div class="container-fluid"  >
+    <div class="row"  style="position: relative;">
+        <img class="col-sm-6" src="images/roller-skates-56af69995f9b58b7d0188183.jpg" width="30%" id="example_picture" >
+        <form class="col-md-4" id="addPicture">
+            <label id="file-input" for="formForFile">Choose image</label>
+            <input id="formForFile" type="file" class="form-control-file">
+        </form>
+
+
+    </div>
+    <br><br><br><br>
+    <div class="col-md-12">
+        <form id="newsForm">
+            <textarea id="caption" type="text" class="form-control" placeholder="Title" required></textarea>
+
+            <br>
+            <textarea id="text" class="form-control" rows="5" placeholder="Text" required></textarea>
+            <br>
+            <button id="submit-btn" type="submit" type="button" class="btn btn-primary">Надіслати</button>
         </form>
     </div>
-    <div class="col-sm-4"></div>
+
 </div>
 
-<div class="row">
-    <div class="col-sm-8">
-        <form>
-            <div class="form-group">
-                <label for="formInput1"></label>
-                <input type="text" class="form-control" id="formInput1" placeholder="News text">
-            </div>
-        </form>
-    </div>
-    <div class="col-sm-4">
-        <button type="button" id="add_news" class="btn btn-primary btn-lg btn-block">Add news</button>
-    </div>
-</div>
 
 
 <marquee behavior="scroll" direction="right" scrollamount="10" scrolldelay="10">
@@ -116,5 +104,15 @@
 <div class="footer">
     <p>Site created by Roman Ostash</a>  2018</p>
 </div>
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+
+
+
 </body>
 </html>
