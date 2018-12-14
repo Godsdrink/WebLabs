@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html manifest="manifest.appcache">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin page</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+
+
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="navbar navbar-inverse navbar-fixed-top">
+                <div>
+                    <a class="navbar-brand" href="#" style="color: whitesmoke">
+                        <img src="images/photoeditorsdk-export.png" width="30" height="25" alt="logo"
+                             style="float: left; margin-right: 3px">
+                        Roller+
+                    </a>
+                </div>
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target="#responsive-menu" style="background-color: black">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="responsive-menu">
+                        <ul class="nav navbar-nav">
+                            <li><a href="/pages/index.html">Home</a></li>
+                            <li><a href="/pages/news.html">News</a></li>
+                            <li><a href="/pages/fans.html">Fans</a></li>
+                            <li class="dropdown">
+                                <a href="/pages/calendar.html" class="dropdown-toggle" data-toggle="dropdown">Matches <b
+                                        class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/pages/calendar.html">Calendar</a></li>
+                                    <li><a href=#>Sudmenu 4</a></li>
+                                    <li><a href=#>Sudmenu 4</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/pages/contacts.html">Contacts</a></li>
+                            <li><a href="/pages/admin.html">Admin</a></li>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div>
+
+    <div class="container">
+        <div class="main-text">
+            <h2>Додати новину</h2>
+
+            <div class="input_form">
+
+                <div class="col-md-6">
+                    <img id="example_picture" src="images/roller-skates-56af69995f9b58b7d0188183.jpg" width="80%">
+                </div>
+                <br><br><br><br><br><br>
+                <form class="col-md-4" id="addPicture">
+                    <label id="file-input" for="formForFile">Виберіть зображення</label>
+                    <input id="formForFile" type="file" class="form-control-file" required>
+
+                </form>
+            </div>
+
+            <br><br><br>
+            <div class="col-md-12">
+                <form id="newsForm">
+
+                    <textarea id="text" class="form-control" rows="5" placeholder="Введіть текст новини" required></textarea>
+                    <br>
+
+                    <button id="submit-btn" type="submit" type="button" class="btn btn-primary">Надіслати</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+<div class="footer">
+    <p>Site created by Roman Ostash</a>  2018</p>
+</div>
+
+</body>
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="/js/admin.js"></script>
+</html>

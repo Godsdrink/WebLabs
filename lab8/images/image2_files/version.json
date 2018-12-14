@@ -1,0 +1,1 @@
+/**/ typeof imglySDKVersionCallback === 'function' && imglySDKVersionCallback({"version":"4.12.1","outdated":true});
